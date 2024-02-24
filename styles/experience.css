@@ -1,0 +1,9 @@
+.experience {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  height: 100dvh;
+  max-height: 100dvh;
+  padding-block: 5rem;
+}

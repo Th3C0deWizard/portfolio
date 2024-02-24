@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+
+  ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: scale 0.8s;
+  }
+
+  a:hover {
+    scale: 1.12;
+    -moz-text-fill-color: transparent;
+    background-image: linear-gradient(
+      to right,
+      var(--green),
+      var(--teal),
+      var(--sky),
+      var(--lavender)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

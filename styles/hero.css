@@ -1,0 +1,38 @@
+.hero {
+  box-sizing: border-box;
+  display: flex;
+  gap: 2rem;
+  height: calc(100dvh - 3.7rem);
+  max-height: calc(100dvh - 4.1rem);
+  padding-right: -5rem;
+
+  div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      margin-bottom: 2rem;
+      animation: aparecer-l-r 1.5s ease forwards;
+      strong {
+        -moz-text-fill-color: transparent;
+        background-image: linear-gradient(
+          to right,
+          var(--mauve),
+          var(--red),
+          var(--maroon),
+          var(--peach)
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+
+    p {
+      padding-left: 1rem;
+      font-size: 1.2rem;
+      animation: aparecer-l-r 2s ease forwards;
+    }
+  }
+}
