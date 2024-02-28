@@ -1,14 +1,13 @@
-.experience {
+.projects {
   scroll-snap-align: start;
   display: flex;
   gap: 1rem;
   min-height: 100dvh;
   box-sizing: border-box;
-  padding-block: 3rem;
-
+  padding-block: 5rem;
   > div {
-    flex-grow: 1;
     display: flex;
+    flex-direction: column;
     gap: 2rem;
 
     button {
@@ -33,17 +32,7 @@
       display: flex;
       align-items: center;
     }
-
-    > div:nth-child(2) {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-
-      > h3 {
-        margin-bottom: 1rem;
-      }
-    }
-
+    
     > div:nth-child(3) {
       display: flex;
       align-items: center;

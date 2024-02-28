@@ -1,10 +1,15 @@
-.hero {
-  box-sizing: border-box;
+.home {
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100dvh;
+  scroll-snap-align: start;
+}
+
+.hero {
+  display: flex;
+  flex-grow: 1;
   gap: 2rem;
-  height: calc(100dvh - 3.7rem);
-  max-height: calc(100dvh - 4.1rem);
-  padding-right: -5rem;
 
   div:nth-child(1) {
     display: flex;

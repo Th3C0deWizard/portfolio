@@ -5,6 +5,9 @@
 @import url("./hero.css");
 @import url("./about.css");
 @import url("./experience.css");
+@import url("./classes.css");
+@import url("./education.css");
+@import url("./projects.css");
 
 :root {
   --rosewater: #f5e0dc;
@@ -36,7 +39,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 * {
@@ -49,7 +52,14 @@ body {
   background-color: var(--crust);
   font-family: "Ubunto Muno", sans-serif;
   color: var(--text);
-  padding-inline: 5rem;
+}
+
+main {
+  padding-left: 5rem;
+  max-height: 100dvh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -76,6 +86,22 @@ h3 {
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--maroon);
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--mauve);
+}
+
+progress {
+  background-color: transparent;
+  border-radius: 0.7rem;
+  border: 1px var(--mauve) solid;
+}
+
+progress::-moz-progress-bar {
+  background-color: var(--green);
 }
 
 @keyframes aparecer-l-r {

@@ -9,38 +9,41 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <script defer src="scripts/script.js"></script>
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <ul>
-          <li>
-            <a href="#about">Sobre mi</a>
-          </li>
-          <li>
-            <a href="#exp">Experiencia</a>
-          </li>
-          <li>
-            <a href="#education">Educación</a>
-          </li>
-          <li>
-            <a href="#projects">Proyectos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
     <main>
-      <section class="hero">
-        <div>
-          <h1>¡Hola!, Soy <strong>Carlos Páez</strong></h1>
-          <p>
-            Programador apasionado, acepto cualquier trabajo siempre y cuando no
-            sea de front-end.
-          </p>
-        </div>
-        <div>
-          <img src="" />
-        </div>
+      <section id="home" class="home">
+        <header>
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a href="#about">Sobre mi</a>
+              </li>
+              <li>
+                <a href="#exp">Experiencia</a>
+              </li>
+              <li>
+                <a href="#education">Educación</a>
+              </li>
+              <li>
+                <a href="#projects">Proyectos</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="hero">
+          <div>
+            <h1>¡Hola!, Soy <strong>Carlos Páez</strong></h1>
+            <p>
+              Programador apasionado, acepto cualquier trabajo siempre y cuando
+              no sea de front-end.
+            </p>
+          </div>
+          <div>
+            <img src="" />
+          </div>
+        </section>
       </section>
       <section id="about" class="about">
         <section>
@@ -52,18 +55,9 @@
               que tenga una disrrupción digital.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-              reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-              ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-              Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-              voluptate voluptate dolor minim nulla est proident. Nostrud
-              officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-              occaecat reprehenderit commodo officia dolor Lorem duis laboris
-              cupidatat officia voluptate. Culpa proident adipisicing id nulla
-              nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-              reprehenderit commodo ex non excepteur duis sunt velit enim.
-              Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
-              culpa et culpa duis.
+              Aporto valora todos los proyectos de los que hago parte ya que me
+              apasiona el desarrollo de proyectos de software y la innovación
+              tecnologica.
             </p>
           </div>
           <div>
@@ -88,7 +82,7 @@
               <div>
                 <p>Linkedin</p>
                 <p>
-                  <a href="">
+                  <a href="https://co.linkedin.com/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                   </a>
                 </p>
@@ -96,7 +90,7 @@
               <div>
                 <p>Github</p>
                 <p>
-                  <a href="">
+                  <a href="https://github.com/Th3C0deWizard" target="_blank">
                     <i class="fa-brands fa-github"></i>
                   </a>
                 </p>
@@ -104,41 +98,456 @@
               <div>
                 <p>Mi blog</p>
                 <p>
-                  <a href="">
+                  <a href="#">
                     <i class="fa-solid fa-signs-post"></i>
                   </a>
                 </p>
               </div>
             </div>
           </div>
+          <aside class="sidenav">
+            <nav>
+              <ul>
+                <div class="vertical-line"></div>
+                <li>
+                  <a href="#home" title="Home">
+                    <i class="fa-solid fa-house"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" title="About">
+                    <i class="fa-regular fa-address-card"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#exp" title="Experience">
+                    <i class="fa-solid fa-check"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#education" title="Education">
+                    <i class="fa-solid fa-school"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects" title="Projects">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
         </section>
         <div>
-          <button>
+          <button onclick="">
             <i class="fa-solid fa-arrow-left"></i>
           </button>
           <div>
             <h3>Skills</h3>
-            <div>
+            <div class="skills-scroller">
               <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-js"></i>
               <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div>
-              <i class="fa-brands fa-html5"></i>
               <i class="fa-brands fa-react"></i>
-              <i class="fa-brands fa-css3-alt"></i>
+              <i class="fa-brands fa-java"></i>
+              <i class="fa-brands fa-python"></i>
+              <i class="fa-brands fa-node"></i>
+              <i class="fa-brands fa-laravel"></i>
+              <i class="fa-brands fa-golang"></i>
+              <i class="fa-brands fa-linux"></i>
+              <i class="fa-solid fa-database"></i>
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-docker"></i>
+              <img src="static/CPP.svg" alt="" />
             </div>
           </div>
-          <button>
+          <button onclick="">
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </section>
       <section id="exp" class="experience">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+          <div>
+            <button type="button">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+          <div>
+            <h3>Experiencia</h3>
+            <div class="card-container">
+              <div>
+                <h4>Just Tow Devs</h4>
+                <p>Full Stack Developer</p>
+                <p>Este es mi primer empleo tengo años de experiencia</p>
+                <p>2010 - 2020</p>
+              </div>
+
+              <div>
+                <h4>Acme Corporation</h4>
+                <p>Senior Software Engineer</p>
+                <p>
+                  Lideré un equipo de desarrollo en proyectos de desarrollo web
+                  y móvil. Participé en la planificación, diseño, desarrollo y
+                  despliegue de aplicaciones. Colaboré estrechamente con otros
+                  equipos para garantizar la entrega oportuna y de alta calidad.
+                </p>
+                <p>2015 - 2022</p>
+              </div>
+
+              <div>
+                <h4>GlobalTech Solutions</h4>
+                <p>Data Analyst</p>
+                <p>
+                  Analicé grandes conjuntos de datos para identificar tendencias
+                  y patrones, y proporcioné informes detallados para mejorar la
+                  toma de decisiones empresariales. Desarrollé y mantuve
+                  pipelines de datos eficientes y automatizados para procesar
+                  datos de manera efectiva.
+                </p>
+                <p>2018 - Presente</p>
+              </div>
+
+              <div>
+                <h4>Innovative Designs Inc.</h4>
+                <p>UX/UI Designer</p>
+                <p>
+                  Diseñé interfaces de usuario intuitivas y atractivas para
+                  aplicaciones web y móviles. Realicé investigaciones de
+                  usuarios, prototipado y pruebas de usabilidad para garantizar
+                  la experiencia del usuario final. Trabajé en estrecha
+                  colaboración con equipos de desarrollo para implementar
+                  diseños efectivos.
+                </p>
+                <p>2017 - 2021</p>
+              </div>
+
+              <div>
+                <h4>GreenTech Labs</h4>
+                <p>Environmental Scientist</p>
+                <p>
+                  Lideré proyectos de investigación para evaluar el impacto
+                  ambiental de diversas actividades humanas. Recopilé y analicé
+                  datos ambientales, y presenté informes detallados para
+                  orientar la toma de decisiones empresariales y políticas.
+                </p>
+                <p>2014 - 2019</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button type="button">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <aside class="sidenav">
+          <nav>
+            <ul>
+              <div class="vertical-line"></div>
+              <li>
+                <a href="#home" title="Home">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#about" title="About">
+                  <i class="fa-regular fa-address-card"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#exp" title="Experience">
+                  <i class="fa-solid fa-check"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#education" title="Education">
+                  <i class="fa-solid fa-school"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#projects" title="Projects">
+                  <i class="fa-solid fa-briefcase"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </section>
+      <section id="education" class="education">
+        <div>
+          <div>
+            <button type="button">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+          <div>
+            <h3>Educación formal</h3>
+            <div class="card-container">
+              <div>
+                <h4>Bachillerato</h4>
+                <p>Bachiller academico</p>
+                <p>
+                  Cursé Bachillerato academicó en la institución educativa
+                  <strong>INEM Luis lopez de Mesa</strong>
+                </p>
+                <p>2014 - 2020</p>
+              </div>
+              <div>
+                <h4>Estudiante de ingeniería</h4>
+                <p>Ingeniería de Sistemas</p>
+                <p>
+                  Actualmente me encuentro cursando el pregrado en ingeniería de
+                  sistemas en la
+                  <strong>UAM (Universidad Autónoma de Manizales)</strong>
+                </p>
+                <p>2021 - presente</p>
+              </div>
+              <div>
+                <h4>Matlab Basico</h4>
+                <p>Curso de Matlab Basico</p>
+                <p>
+                  Este es un cruso de matlab basico que realicé en la pagina
+                  oficial de mathworks.
+                </p>
+                <p>2023 - presente</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button type="button">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <aside class="sidenav">
+          <nav>
+            <ul>
+              <div class="vertical-line"></div>
+
+              <li>
+                <a href="#home" title="Home">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#about" title="About">
+                  <i class="fa-regular fa-address-card"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#exp" title="Experience">
+                  <i class="fa-solid fa-check"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#education" title="Education">
+                  <i class="fa-solid fa-school"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#projects" title="Projects">
+                  <i class="fa-solid fa-briefcase"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </section>
+      <section id="projects" class="projects">
+        <div>
+          <h3>Mis proyectos</h3>
+          <div class="projects-container">
+            <div>
+              <img src="static/CodeBeaters.png" alt="CodeBeaters Logo" />
+              <div>
+                <h4>CodeBeaters</h4>
+                <p>
+                  CodeBeaters es una plataforma web educativa del sector de la
+                  informatica en la que se puede acceder, crear, reseñar y
+                  calificar contenido educativo de manera comunitaria, solo
+                  basta con crear una cuenta y podrás hacer aprte de la
+                  comunidad CodeBeaters que apunta por una mejora en la
+                  educación en el sector de la informatica.
+                </p>
+                <div>
+                  <div>
+                    <a href="">
+                      <i class="fa-solid fa-signs-post"></i>
+                    </a>
+                    <a
+                      href="https://github.com/Th3C0deWizard/belicoders/tree/development"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <span>Progreso:</span>
+                    <progress value="40" max="100"></progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="static/BurningPages.webp" alt="Burning Pages art" />
+              <div>
+                <h4>Burning Pages</h4>
+                <p>
+                  Burning Pages es un servicio web api (application programming
+                  interface) basado en el estandar REST. El objetivo de burning
+                  pages es la documentación y calificación de distintas obras de
+                  literatura de todos los generos, la iniciativa nace tras la
+                  necesidad de una fuente confiable de información que provea a
+                  los amantes de la literatura un espacio comunitario para
+                  encontrar su proxima lectura o bien para reseñar u opinar
+                  acerca de alguna obra en especifico.
+                </p>
+                <div>
+                  <div>
+                    <a href="">
+                      <i class="fa-solid fa-signs-post"></i>
+                    </a>
+                    <a
+                      href="https://github.com/Th3C0deWizard/belicoders/tree/development"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <span>Progreso:</span>
+                    <progress value="60" max="100"></progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="static/HelloDev.png" alt="proyecto 1" />
+              <div>
+                <h4>HelloDev</h4>
+                <p>
+                  HelloDev es un proyecto de desarrollo de software desarrollado
+                  como entrega final de la asignatura de ingeniería de software
+                  I, el proyecto plantea un desarrollo tecnologico para el área
+                  de comunicación de la UAM (Universidad autonoma de manizales)
+                  en conjunto con el departamente de ciencias computacionales. A
+                  través del proyecto se puede visitar, participar y gestionar
+                  una revista electronica con tematica del área de la
+                  informatica.
+                </p>
+                <div>
+                  <div>
+                    <a href="">
+                      <i class="fa-solid fa-signs-post"></i>
+                    </a>
+                    <a
+                      href="https://github.com/Th3C0deWizard/HelloDev"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <span>Progreso:</span>
+                    <progress value="100" max="100"></progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="static/ProjectSort.png" alt="proyecto 1" />
+              <div>
+                <h4>Project Sort</h4>
+                <p>
+                  Project Sort es un proyecto de investigación que tiene como
+                  objetivo realizar un análisis tanto téorico como experimental
+                  de dos algoritmos de ordenamiento, automatizando el proceso de
+                  ejecución de los algoritmos, medicion y procesamiento de
+                  metricas.
+                </p>
+                <div>
+                  <div>
+                    <a href="">
+                      <i class="fa-solid fa-signs-post"></i>
+                    </a>
+                    <a
+                      href="https://github.com/Th3C0deWizard/project-sort"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <span>Progreso:</span>
+                    <progress value="40" max="100"></progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src="static/CalvinxParabox.png" alt="proyecto 1" />
+              <div>
+                <h4>Calvinx Parabox</h4>
+                <p>
+                  CalvinX Parabox es una pequeña copia de la demo de el juego
+                  conocido como <strong>Patrick's Parabox</strong>, El juego
+                  esta escrito en Java haciendo uso de la libreria grafica de la
+                  api de java (Java Swing) , Además se hace uso de programación
+                  con hilos para usar multiples nucleos del procesador.
+                </p>
+                <div>
+                  <div>
+                    <a href="">
+                      <i class="fa-solid fa-signs-post"></i>
+                    </a>
+                    <a href="">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <span> Progreso: </span>
+                    <progress value="100" max="100"></progress>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="sidenav">
+          <nav>
+            <ul>
+              <div class="vertical-line"></div>
+
+              <li>
+                <a href="#home" title="Home">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#about" title="About">
+                  <i class="fa-regular fa-address-card"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#exp" title="Experience">
+                  <i class="fa-solid fa-check"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#education" title="Education">
+                  <i class="fa-solid fa-school"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#projects" title="Projects">
+                  <i class="fa-solid fa-briefcase"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
       </section>
     </main>
     <footer></footer>
