@@ -1,9 +1,8 @@
 .home {
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
   min-height: 100dvh;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 .hero {

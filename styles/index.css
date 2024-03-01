@@ -39,7 +39,7 @@
 }
 
 html {
-  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -49,17 +49,16 @@ html {
 }
 
 body {
+  display: flex;
   background-color: var(--crust);
   font-family: "Ubunto Muno", sans-serif;
   color: var(--text);
+  max-width: 100dvw;
+  overflow-x: hidden;
 }
 
 main {
   padding-left: 5rem;
-  max-height: 100dvh;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
 }
 
 a {

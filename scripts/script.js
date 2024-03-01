@@ -57,9 +57,8 @@ function estaEnViewport(elemento) {
   );
 }
 
-const mainContainer = document.querySelector("main");
 const as = document.querySelectorAll(".sidenav a");
-mainContainer.addEventListener("scroll", () => {
+document.addEventListener("scroll", () => {
   as.forEach((element) => {
     const section = document.querySelector(element.href.match(/#(.*)/));
     console.log("section: ", section.offsetTop);
