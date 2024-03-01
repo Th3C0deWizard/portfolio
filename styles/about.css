@@ -19,6 +19,12 @@
         margin-bottom: 2rem;
         color: var(--yellow);
       }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+      }
     }
 
     > div:nth-child(2) > div {
