@@ -48,10 +48,6 @@ var projectsscrollInterval = setInterval(() => {
 
 function estaEnViewport(elemento) {
   var rect = elemento.getBoundingClientRect();
-  console.log("elemento", elemento.id);
-  console.log("rect : ", rect);
-  console.log("innerHeight", window.innerHeight);
-  console.log("clientHeight", document.documentElement.clientHeight);
   return (
     rect.top >= 0 && rect.left >= 0 && rect.bottom <= window.innerHeight + 300
   );
@@ -63,10 +59,8 @@ document.addEventListener("scroll", () => {
     const section = document.querySelector(element.href.match(/#(.*)/));
     if (estaEnViewport(section)) {
       element.dataset.current = true;
-      console.log(":D");
     } else {
       element.dataset.current = false;
-      console.log(":C");
     }
   });
 });
