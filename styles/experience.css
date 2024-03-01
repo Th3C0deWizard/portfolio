@@ -1,46 +1,11 @@
 .experience {
   display: flex;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 2rem;
   padding-block: 3rem;
 
-  > div {
-    flex-grow: 1;
-    display: flex;
-    gap: 2rem;
-
-    button {
-      border: 1px solid var(--red);
-      width: 3.5rem;
-      height: 3.5rem;
-      cursor: pointer;
-      border-radius: 100%;
-      background-color: var(--base);
-      color: var(--green);
-      transition: scale 0.5s;
-    }
-
-    button:hover {
-      scale: 1.15;
-      border: 1px solid var(--green);
-      background-color: var(--base);
-      color: var(--yellow);
-    }
-
-    > div:nth-child(1) {
-      display: flex;
-      align-items: center;
-    }
-
-    > div:nth-child(2) {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      gap:2rem;
-    }
-
-    > div:nth-child(3) {
-      display: flex;
-      align-items: center;
-    }
+  > .card-container {
+    grid-template-columns: 0.33fr 0.33fr;
+    justify-content: center;
   }
 }
